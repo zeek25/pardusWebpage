@@ -16,7 +16,7 @@ include("php/queryShips.php");
 
 <body>
 
-  <center>Ship Name<input type="text" id="shipName" value="Giblets" style="width: 300px" /></center>
+  <!--<center>Ship Name<input type="text" id="shipName" value="Giblets" style="width: 300px" /></center>-->
 
   <center>
 
@@ -100,7 +100,7 @@ include("php/queryShips.php");
 
 
 
-
+<!--
   <ul style="list-style-type:none">
     <li>Weapon 1
       <select>
@@ -115,6 +115,6 @@ include("php/queryShips.php");
       </select>
     </li>
   </ul>
-
+-->
 
 </body>
