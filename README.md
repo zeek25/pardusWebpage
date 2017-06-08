@@ -1,9 +1,10 @@
-#Introduction
+# Introduction
 
 This project is meant as practice for myself and hopefully results in a useful tool to be used by users at [Pardus](https://www.pardus.at). This tool will support the planning of ships from the Pardus browser game, with a possibility of more features being added. This project is incomplete and will be updated when significant changes are made.
 
-##Ship Selection
+## Ship Selection
 A php script makes a database query to populate a drop down menu with all currently available ships. <br />
+
 ![alt text](READMEImages/select.png?raw=true | width="200") <br />
 ![alt text](READMEImages/dropDown.png?raw=true | width=200 height=300)<br />
 
