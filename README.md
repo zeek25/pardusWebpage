@@ -4,12 +4,12 @@ This project is meant as practice for myself and hopefully results in a useful t
 
 ##Ship Selection
 A php script makes a database query to populate a drop down menu with all currently available ships. <br />
-![](READMEImages/select.png?raw=true |width=200 "First look of page")
-![](READMEImages/dropDown.png?raw=true | width=200 height=300 "Clicking Drop down menu")<br />
+![alt text](READMEImages/select.png?raw=true | width="200" "First look of page")
+![alt text](READMEImages/dropDown.png?raw=true | width=200 height=300 "Clicking Drop down menu")<br />
 
 When a ship is selected another database call is performed to retrieve all necessary info of the selected ship. That info is then displayed on screen along with an image of the ship. In the "Ship Equipment" section drop down menus are added (or removed) for Guns and Missiles (Equal to the guns and missiles the current ship has). <br />
 
-![](READMEImages/shipSelected.png?raw=true) <br />
+![alt text](READMEImages/shipSelected.png?raw=true) <br />
 
 ### Next Planned Changes
 My next update will be to format the image and ship info. As well as populate the dropdown menus with the relevant weapons as well as add the images of the weapons.
