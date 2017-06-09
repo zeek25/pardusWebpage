@@ -11,5 +11,12 @@
         echo "<option value=\"Images/Ships/".$shipNames["faction"]."/".$shipNames["img_name"]."\" data-name='".$shipNames['name']."'>".$shipNames["name"]."</option>";
       }
   }
+  function getMaxWeapons($connection, $weaponType){
+    //This covers any new ships added to the database that may have more than the current max
+    $maxQuery = "SELECT MAX(".$weaponType.") FROM ships;"; //
+    $result = $connection->query($maxQuery);
 
+    $maxWeapons = $result->fetch_assoc();
+    echo "'".$maxWeapons["MAX(".$weaponType.")"]."'";
+  }
 ?>
