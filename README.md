@@ -13,4 +13,7 @@ When a ship is selected another database call is performed to retrieve all neces
 ![alt text](READMEImages/shipSelected.png?raw=true) <br />
 
 ### Next Planned Changes
-My next update will be to format the image and ship info. As well as populate the dropdown menus with the relevant weapons as well as add the images of the weapons.
+My next update will include some or all of these changes.
+* Format image and ship info.
+* Change weapon dropdown menus to be hidden/shown rather than add/removed.
+* Populate the dropdown menus with the relevant weapons along with the images.
