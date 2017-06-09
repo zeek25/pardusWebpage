@@ -1,1 +1,16 @@
 
+#shipImg{
+  float:left;
+  vertical-align:middle;
+}
+#shipInfo {
+  float:left;
+  vertical-align:middle;
+}
+
+#shipStats{
+  display:inline-block;
+  clear:both;
+  vertical-align:middle;
+
+}
