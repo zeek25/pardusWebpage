@@ -4,12 +4,12 @@ function showWeapons(totalWeapons, lastTotal, weaponType){
 
   if(totalWeapons > lastTotal){ //Adds select tags for the missing weapons
     for (i = lastTotal;i < totalWeapons; i++){//weaponi to weapon(lastTotal-1)
-      $("#" + weaponType + "s").append("<select id='" + weaponType + i.toString() +"'></select>");
+      $("#" + weaponType + i.toString()).show();
     }
   }
   else{ //removes select tags for the extra weapons
     for (i = totalWeapons; i < lastTotal; i++){ //weaponi to weapon(lastTotal-1)
-      $("#" + weaponType + i).remove();
+      $("#" + weaponType + i.toString()).hide();
     }
   }
   $("#" + weaponType + "s").attr("data-num" + weaponType + "s", totalWeapons); //updates data attribute to the new number of weapons
@@ -24,6 +24,17 @@ function updateShipInfo(info){ //update table in PardusShips.php with the ship s
   $("#crew").html(info.crew);
   $("#price").html(info.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")); //Use of regex to add commas to numbers > 1000
 
+}
+function createWeapons(weaponType)
+{
+  console.log(weaponType);
+  var max = parseInt($("#shipStats").attr("data-max" + weaponType + "s"));
+
+  for(i = 0; i < max; i++)
+  {
+    $("#" + weaponType + "s").append("<select id='" + weaponType + i.toString() +"'></select>");
+    $("#"+ weaponType + i.toString()).hide();
+  }
 }
 function getShip(option) //When a new ship is chosen
 {
