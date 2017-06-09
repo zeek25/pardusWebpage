@@ -2,6 +2,7 @@
 <?php
 include("php/connect.php");
 include("php/queryShips.php");
+include("php/initialize.php");
 
 ?>
 <html lang="en">
@@ -10,7 +11,7 @@ include("php/queryShips.php");
   <title>Ship Builder</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/updateShipImage.js" defer></script>
-  <script type="text/javascript" src="js/getShip.js" defer></script>
+  <script type="text/javascript" src="js/getShip.js" ></script>
   <link rel="stylesheet" type="text/css" href="pardusStyles.css">
 </head>
 
@@ -47,7 +48,7 @@ include("php/queryShips.php");
     </select>
     <br>
 
-    <div id="shipStats">
+    <div id="shipStats" data-maxguns=<?php getMaxWeapons($mysqli, "guns");?> data-maxmissiles=<?php getMaxWeapons($mysqli,"missiles");?>>
       <img id="shipImg" src=""/>
       <table id="shipInfo">
         <tr>
@@ -98,7 +99,10 @@ include("php/queryShips.php");
     </div>
   </center>
 
-
+  <script>
+    createWeapons("gun");
+    createWeapons("missile");
+    </script>
 
 <!--
   <ul style="list-style-type:none">
