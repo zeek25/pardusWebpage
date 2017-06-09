@@ -14,6 +14,4 @@ When a ship is selected another database call is performed to retrieve all neces
 
 ### Next Planned Changes
 My next update will include some or all of these changes.
-* Format image and ship info.
-* Change weapon dropdown menus to be hidden/shown rather than add/removed.
 * Populate the dropdown menus with the relevant weapons along with the images.
